@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #171717;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #252525;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: white;
+    font-size: 36px;
+}
+
+header h1 span {
+    color: #ffcf24;
+}
+
+header p {
+    font-style: italic;
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input {
+    flex: 1;
+    min-width: 100px;
+}
+
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #ffcf24;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.task {
+    background: #303030;
+    padding: 20px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.complete {
+    background: #ffcf24;
+    margin-right: 10px;
+}
+
+.delete {
+    background: #ff7043;
+    color: white;
+}
+
+#count {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#progressBar {
+    background: #555;
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#progress {
+    background: #ffcf24;
+    height: 12px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.clear {
+    display: block;
+    margin: 25px auto;
+    background: #ff7043;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .input-area {
+        flex-direction: column;
+    }
+
+    .task {
+        flex-wrap: wrap;
+    }
+}

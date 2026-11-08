@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Task<span>Buddy</span></h1>
+        <p>Your friendly task manager</p>
+    </header>
+
+    <div class="container">
+
+        <div class="input-area">
+
+            <input type="text" id="taskInput"
+            placeholder="Enter your task">
+
+            <select id="priority">
+                <option>High</option>
+                <option selected>Medium</option>
+                <option>Low</option>
+            </select>
+
+            <select id="category">
+                <option>General</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+
+            <button onclick="addTask()">Add Task</button>
+
+        </div>
+
+        <div id="taskList"></div>
+
+        <p id="count">0 of 0 tasks completed</p>
+
+        <div id="progressBar">
+            <div id="progress"></div>
+        </div>
+
+        <button class="clear" onclick="clearTasks()">
+            Clear All Tasks
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
